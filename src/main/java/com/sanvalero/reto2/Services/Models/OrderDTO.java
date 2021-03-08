@@ -9,11 +9,11 @@ public class OrderDTO {
     private String Date; 
     private Order.estates State;
     
-    public OrderDTO(final String _name, final String _date,  final Order.estates _state){
-        
+    public OrderDTO(final String _date, final String _name, final Order.estates _state){
         super();
-        this.Name = _name;
-        this.Date = _date;  
+      
+        this.Date = _date; 
+        this.Name = _name; 
         this.State = _state;
     }
 

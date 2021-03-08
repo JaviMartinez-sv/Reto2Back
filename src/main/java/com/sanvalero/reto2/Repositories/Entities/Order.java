@@ -6,9 +6,9 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 
-@Table(name = "Order")
+@Table(name = "Orderrr")
 
-@Entity(name = "Order")
+@Entity(name = "Orderrr")
 
 public class Order {
 
@@ -16,7 +16,7 @@ public class Order {
 
 
     public enum estates {
-        ACEPPTADO,
+        ACEPTADO,
         CANCELADO,
         ENCURSO,
         ENTREGADO,
@@ -30,8 +30,7 @@ public class Order {
     private estates State;
 
     
-    public Order() {
-	}
+
 
 
     public Order (final String _date, final String _name, final estates _state){
@@ -56,6 +55,8 @@ public class Order {
         this.State = order.State;
     }
 	
+    public Order() {
+	}
 
     
 
