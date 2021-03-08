@@ -20,4 +20,9 @@ public class OrderService {
                 .collect(Collectors.toList());
     }
 
+    public List<OrderDTO> findById(Long id){
+        return orderRepository.findOById(id).stream().map(x -> modelMapper.map(x, OrderDTO.class)).collect(Collectors.toList());
+
+    }
+
 }

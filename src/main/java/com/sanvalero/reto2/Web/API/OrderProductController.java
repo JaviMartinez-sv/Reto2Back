@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class OrderProductController {
     
-    private static OrderProductService orderProductService;
+    private OrderProductService orderProductService;
 
     OrderProductController(OrderProductService orderProductService) {
 

@@ -17,9 +17,7 @@ public class Product {
     private int Price; 
     private String Image;
 
-    public Product(){
 
-    }
 
     public Product(final String _name, final int _price, final String _image){
         this.Name = _name;
@@ -41,6 +39,9 @@ public class Product {
         this.Image = product.Image;
     }
 
+    public Product(){
+
+    }
 
   
     public String getName() {

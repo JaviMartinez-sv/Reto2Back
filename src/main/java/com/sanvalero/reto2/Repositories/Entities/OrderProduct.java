@@ -21,14 +21,15 @@ public class OrderProduct {
 
 
     
-    public OrderProduct() {
-	}
+
 
     public OrderProduct(Long Idorder, Long Idproduct, int quantity) {
         this.Idorder = Idorder;
         this.Idproduct = Idproduct;
         this.quantity = quantity;
     }
+    public OrderProduct() {
+	}
 
     public Long getIdOrder() {
         return Idorder;

@@ -16,8 +16,15 @@ public class ProductService {
     @Autowired
     private ModelMapper modelMapper;
 
+    // Encontrar todos productos 
     public List<ProductDTO> getAll() {
         return productRepository.findAll().stream().map(x -> modelMapper.map(x, ProductDTO.class))
+                .collect(Collectors.toList());
+    }
+
+    //Encontrar productos pro id
+    public List<ProductDTO> getByPid(Long ids) {
+        return productRepository.findById(ids).stream().map(x -> modelMapper.map(x, ProductDTO.class))
                 .collect(Collectors.toList());
     }
 }
