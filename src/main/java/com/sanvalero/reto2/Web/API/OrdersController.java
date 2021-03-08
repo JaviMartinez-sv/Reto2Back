@@ -15,7 +15,7 @@ public class OrdersController {
     
 
 
-    private OrderService orderService;
+    private static OrderService orderService;
 
     OrdersController(OrderService orderService) {
 
